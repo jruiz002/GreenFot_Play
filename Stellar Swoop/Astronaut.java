@@ -1,7 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Spacecraft here.
+ * Esta clase describe el comportamiento del astronauta segun las flechas del teclado.
  * 
  * @author (Jose Ruiz y Diego Flores) 
  * @version (1.0.0)

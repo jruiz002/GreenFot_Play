@@ -8,8 +8,18 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Meteor extends Actor
 {
+    private int velocityX = 0;
+    
+    public Meteor(int velocidad){
+        velocityX = velocidad;
+    }
+    
+    public void move(){
+        setLocation(getX() + velocityX, getY());        
+    }
+    
     public void act()
     {
-
+        move();
     }
 }
