@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=Astronaut
+comment0.text=\n\ Write\ a\ description\ of\ class\ Spacecraft\ here.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=direction
+comment2.target=void\ setDirection(int)
+comment3.params=
+comment3.target=void\ up()
+comment4.params=
+comment4.target=void\ down()
+comment5.params=
+comment5.target=void\ left()
+comment6.params=
+comment6.target=void\ right()
+numComments=7

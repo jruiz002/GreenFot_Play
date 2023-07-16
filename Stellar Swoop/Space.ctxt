@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Space
+comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
+comment1.params=
+comment1.target=Space()
+comment2.params=
+comment2.target=void\ statePlay()
+numComments=3
