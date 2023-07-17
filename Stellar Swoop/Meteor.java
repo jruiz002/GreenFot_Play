@@ -18,8 +18,18 @@ public class Meteor extends Actor
         setLocation(getX() + velocityX, getY());        
     }
     
+    public void destroy(){
+        Actor character = getOneObjectAtOffset(0, 0, Astronaut.class);
+        if(character!=null){
+            character.setLocation(20, 200);
+        }
+        
+    }
+    
+    
     public void act()
     {
         move();
+        destroy();
     }
 }
