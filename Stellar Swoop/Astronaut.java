@@ -12,6 +12,8 @@ public class Astronaut extends Actor
     public int down = 2;
     public int left = 3;
     public int right = 4;
+    public int laserDirection = 4;
+    public boolean isAttacking = false;
     
     public void act()
     {
@@ -24,20 +26,25 @@ public class Astronaut extends Actor
         }else if (Greenfoot.isKeyDown("down")){
             setDirection(down);
         }
+        attack(laserDirection);
     }
     
     public void setDirection(int direction){
         if (direction == 1){
             up();
+            laserDirection = 1;
         }
         if (direction == 2){
             down();
+            laserDirection = 2;
         }
         if (direction == 3) {
             left();
+            laserDirection = 3;
         }
         if (direction == 4) {
             right();
+            laserDirection = 4;
         }
     }
     
@@ -86,6 +93,17 @@ public class Astronaut extends Actor
             int xpos = getX()+5;
             int ypos = getY();
             setLocation(xpos, ypos);
+        }
+    }
+    
+    public void attack(int laserDirection){
+        if(isAttacking && Greenfoot.isKeyDown("x")){
+            Laser myLaser = new Laser(laserDirection);
+            getWorld().addObject(myLaser, getX(), getY());
+            isAttacking = false;
+        }
+        if(!isAttacking && !Greenfoot.isKeyDown("x")){
+            isAttacking= true;
         }
     }
     
