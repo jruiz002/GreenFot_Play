@@ -22,6 +22,10 @@ public class Meteor extends Actor
         Actor character = getOneObjectAtOffset(0, 0, Astronaut.class);
         if(character!=null){
             character.setLocation(20, 200);
+            World myWorld = getWorld();
+            Space mySpace = (Space)myWorld;
+            Scoreboard sc = mySpace.getScoreboard();
+            sc.resetScore();
         }
         
     }

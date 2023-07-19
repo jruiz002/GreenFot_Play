@@ -21,13 +21,8 @@ public class Laser extends Actor
     
     public void act()
     {
-        destroy();
         laserMovement();
-        if((getX()>=getWorld().getWidth()-15) ||(getX()<=15)){
-            getWorld().removeObject(this);
-        }else if((getY()>=getWorld().getHeight()-15) || (getY()<=15)){
-            getWorld().removeObject(this);
-        }
+        destroy();
     }
     
     public void laserMovement(){
@@ -57,7 +52,17 @@ public class Laser extends Actor
     public void destroy(){
         Actor meteor = getOneObjectAtOffset(0, 0, Meteor.class);
         if(meteor!=null){
-            getWorld().removeObject(meteor);
+            World myWorld = getWorld();
+            myWorld.removeObject(meteor);
+            myWorld.removeObject(this);
+            Space mySpace = (Space)myWorld;
+            Scoreboard sc = mySpace.getScoreboard();
+            sc.addScore();
+            
+        }else if((getX()>=getWorld().getWidth()-15) ||(getX()<=15)){
+            getWorld().removeObject(this);
+        }else if((getY()>=getWorld().getHeight()-15) || (getY()<=15)){
+            getWorld().removeObject(this);
         }
         
     }
