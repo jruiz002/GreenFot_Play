@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Space
-comment0.text=\r\n\ Esta\ clase\ describe\ el\ comportamiento\ el\ comportamiento\ del\ escenario\ con\ los\ objetos.\r\n\ \r\n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \r\n\ @version\ (1.0.0)\r\n
+comment0.text=\n\ Esta\ clase\ describe\ el\ comportamiento\ el\ comportamiento\ del\ escenario\ con\ los\ objetos.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
 comment1.params=
 comment1.target=Space()
 comment2.params=

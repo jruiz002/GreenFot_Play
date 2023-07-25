@@ -32,15 +32,15 @@ public class Astronaut extends Actor
     public void setDirection(int direction){
         if (direction == 1){
             up();
-            laserDirection = 1;
+            laserDirection = 4;
         }
         if (direction == 2){
             down();
-            laserDirection = 2;
+            laserDirection = 4;
         }
         if (direction == 3) {
             left();
-            laserDirection = 3;
+            laserDirection = 4;
         }
         if (direction == 4) {
             right();

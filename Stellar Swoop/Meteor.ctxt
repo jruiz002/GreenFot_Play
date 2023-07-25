@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Meteor
-comment0.text=\r\n\ Esta\ clase\ describe\ el\ comportamiento\ que\ tendra\ el\ meteorito\ en\ el\ escenario.\r\n\ \r\n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \r\n\ @version\ (1.0.0)\r\n
+comment0.text=\n\ Esta\ clase\ describe\ el\ comportamiento\ que\ tendra\ el\ meteorito\ en\ el\ escenario.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
 comment1.params=velocidad
 comment1.target=Meteor(int)
 comment2.params=
