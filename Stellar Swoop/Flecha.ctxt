@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=Flecha
+comment0.text=\n\ WEsta\ clase\ describe\ el\ comportamiento\ de\ la\ flecha.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
+comment1.params=
+comment1.target=Flecha()
+comment2.params=
+comment2.target=void\ act()
+numComments=3

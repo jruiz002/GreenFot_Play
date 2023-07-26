@@ -8,6 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Space extends World
 {
+    
     private int enemy = 0;
     Scoreboard sc = new Scoreboard();
     public Space()
@@ -15,6 +16,7 @@ public class Space extends World
         // Se crea un escenario de 850X600.
         super(850, 600, 1, false);
         setPaintOrder(Scoreboard.class, Meteor.class, Astronaut.class);
+        Greenfoot.setWorld(new Menu());
         statePlay();
     }
     
