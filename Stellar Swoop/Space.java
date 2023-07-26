@@ -23,7 +23,7 @@ public class Space extends World
     public void statePlay(){
         Astronaut astronaut = new Astronaut();
         addObject(astronaut, 20, 200);
-        addObject(sc, 150, 50);
+        addObject(sc, 90, 50);
     }
     
     public Scoreboard getScoreboard(){

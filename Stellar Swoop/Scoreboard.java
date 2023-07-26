@@ -2,8 +2,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Scoreboard here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jose Ruiz y Diego Flores) 
+ * @version (1.0.0)
  */
 public class Scoreboard extends Actor
 {
@@ -14,7 +14,7 @@ public class Scoreboard extends Actor
     private int score = 0;
     public void act()
     {
-        setImage(new GreenfootImage("Meteoritos destruidos: "+score, 30, Color.WHITE, Color.BLACK ));
+        setImage(new GreenfootImage("Score: "+ score, 30, Color.WHITE, Color.BLACK ));
     }
     
     public void addScore(){
