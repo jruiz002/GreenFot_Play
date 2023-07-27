@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=GameOver
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ GameOver\ here.\r\n\ \r\n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \r\n\ @version\ (1.0.0)\r\n
+comment1.params=
+comment1.target=GameOver()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ GameOver.\r\n\ \r\n
+comment2.params=lastScore
+comment2.target=void\ setLastScore(int)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ setText()
+comment5.params=
+comment5.target=void\ addOptions()
+numComments=6

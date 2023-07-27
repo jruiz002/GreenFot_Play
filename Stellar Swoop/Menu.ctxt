@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Menu
-comment0.text=\n\ Esta\ clase\ describe\ el\ comportamiendo\ del\ men\u00FA\ de\ inicio.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
+comment0.text=\r\n\ Esta\ clase\ describe\ el\ comportamiendo\ del\ men\u00FA\ de\ inicio.\r\n\ \r\n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \r\n\ @version\ (1.0.0)\r\n
 comment1.params=
 comment1.target=Menu()
 comment2.params=

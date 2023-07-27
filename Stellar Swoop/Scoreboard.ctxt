@@ -1,10 +1,12 @@
 #BlueJ class context
 comment0.target=Scoreboard
-comment0.text=\n\ Write\ a\ description\ of\ class\ Scoreboard\ here.\n\ \n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \n\ @version\ (1.0.0)\n
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Scoreboard\ here.\r\n\ \r\n\ @author\ (Jose\ Ruiz\ y\ Diego\ Flores)\ \r\n\ @version\ (1.0.0)\r\n
 comment1.params=
 comment1.target=void\ act()
 comment2.params=
 comment2.target=void\ addScore()
 comment3.params=
 comment3.target=void\ resetScore()
-numComments=4
+comment4.params=
+comment4.target=int\ getScore()
+numComments=5

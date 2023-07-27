@@ -3,8 +3,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 /**
  * Write a description of class Laser here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Jose Ruiz y Diego Flores) 
+ * @version (1.0.0)
  */
 public class Laser extends Actor
 {

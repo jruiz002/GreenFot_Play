@@ -24,4 +24,8 @@ public class Scoreboard extends Actor
     public void resetScore(){
         score = 0;
     }
+    
+    public int getScore(){
+        return score;
+    }
 }

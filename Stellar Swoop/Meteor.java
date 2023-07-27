@@ -21,11 +21,13 @@ public class Meteor extends Actor
     public void destroy(){
         Actor character = getOneObjectAtOffset(0, 0, Astronaut.class);
         if(character!=null){
+            GameOver lost = new GameOver();
             character.setLocation(20, 200);
             World myWorld = getWorld();
             Space mySpace = (Space)myWorld;
             Scoreboard sc = mySpace.getScoreboard();
-            sc.resetScore();
+            lost.setLastScore(sc.getScore());
+            Greenfoot.setWorld(lost);
         }
         
     }
