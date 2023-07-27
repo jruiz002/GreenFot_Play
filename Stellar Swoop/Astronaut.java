@@ -26,6 +26,11 @@ public class Astronaut extends Actor
         }else if (Greenfoot.isKeyDown("down")){
             setDirection(down);
         }
+        if((getX()>=getWorld().getWidth()-15) || (getX()<=15)){
+            setLocation(40, getWorld().getHeight()/2);
+        }else if((getY()>=getWorld().getHeight()-15) || (getY()<=15)){
+            setLocation(40, getWorld().getHeight()/2);
+        }
         attack(laserDirection);
     }
     

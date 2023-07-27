@@ -22,7 +22,7 @@ public class Space extends World
     
     public void statePlay(){
         Astronaut astronaut = new Astronaut();
-        addObject(astronaut, 20, 200);
+        addObject(astronaut, 40, this.getHeight()/2);
         addObject(sc, 90, 50);
     }
     
@@ -38,7 +38,7 @@ public class Space extends World
         }
         if (enemy == 1){
             int posY = Greenfoot.getRandomNumber(getHeight());
-            addObject(new Meteor(-(2 + Greenfoot.getRandomNumber(3))),getWidth() + 200, posY);
+            addObject(new Meteor(-2*(2 + Greenfoot.getRandomNumber(5))),getWidth() + 200, posY);
         }
     }
 }
