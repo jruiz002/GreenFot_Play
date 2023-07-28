@@ -19,12 +19,16 @@ public class Meteor extends Actor
     }
     
     public void destroy(){
+        GreenfootSound dead = new GreenfootSound("../sounds/impact.mp3");
         Actor character = getOneObjectAtOffset(0, 0, Astronaut.class);
         if(character!=null){
+            dead.setVolume(90);
+            dead.play();
             GameOver lost = new GameOver();
             character.setLocation(20, 200);
             World myWorld = getWorld();
             Space mySpace = (Space)myWorld;
+            mySpace.getSounds().stop();
             Scoreboard sc = mySpace.getScoreboard();
             lost.setLastScore(sc.getScore());
             Greenfoot.setWorld(lost);
@@ -37,5 +41,8 @@ public class Meteor extends Actor
     {
         move();
         destroy();
+        if((getX()<=15)){
+            getWorld().removeObject(this);
+        }
     }
 }

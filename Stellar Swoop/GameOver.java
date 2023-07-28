@@ -11,6 +11,7 @@ public class GameOver extends World
     private int option = 0;
     private int lastScore;
     private Flecha flecha = new Flecha();
+    private GreenfootSound background = new GreenfootSound("../sounds/you_lost.mp3");
     /**
      * Constructor for objects of class GameOver.
      * 
@@ -26,16 +27,26 @@ public class GameOver extends World
     }
     
     public void act(){
+        background.setVolume(70);
+        background.playLoop();
         if (Greenfoot.isKeyDown("DOWN") && option !=1) option--;
         if (Greenfoot.isKeyDown("UP") && option !=0) option++;
         if (option >= 2) option = 0;
         if (option < 0) option = 1;
         flecha.setLocation(200, 400 + (option * 100));
         if (Greenfoot.isKeyDown("ENTER")){
+            setSound(50, "../sounds/success.mp3");
+            background.stop();
             if (option == 0) Greenfoot.setWorld(new Space());
             if (option == 1) Greenfoot.setWorld(new Menu());
         }
         setText();
+    }
+    
+    public void setSound(int vol, String name){
+        GreenfootSound go = new GreenfootSound(name);
+        go.setVolume(vol);
+        go.play();
     }
     
     public void setText(){

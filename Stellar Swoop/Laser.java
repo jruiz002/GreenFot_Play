@@ -50,9 +50,12 @@ public class Laser extends Actor
     }
     
     public void destroy(){
+        GreenfootSound destroyed = new GreenfootSound("../sounds/destroy.mp3");
         Actor meteor = getOneObjectAtOffset(0, 0, Meteor.class);
         if(meteor!=null){
             World myWorld = getWorld();
+            destroyed.setVolume(40);
+            destroyed.play();
             myWorld.removeObject(meteor);
             myWorld.removeObject(this);
             Space mySpace = (Space)myWorld;

@@ -11,6 +11,7 @@ public class Space extends World
     
     private int enemy = 0;
     Scoreboard sc = new Scoreboard();
+    private GreenfootSound background = new GreenfootSound("../sounds/Pista2Juego.mp3");
     public Space()
     {    
         // Se crea un escenario de 850X600.
@@ -30,7 +31,13 @@ public class Space extends World
         return sc;
     }
     
+    public GreenfootSound getSounds(){
+        return background;
+    }
+    
     public void act(){
+        background.setVolume(70);
+        background.playLoop();
         if (enemy > 0){
             enemy--;
         }else{
@@ -39,6 +46,7 @@ public class Space extends World
         if (enemy == 1){
             int posY = Greenfoot.getRandomNumber(getHeight());
             addObject(new Meteor(-2*(2 + Greenfoot.getRandomNumber(5))),getWidth() + 200, posY);
+            
         }
     }
 }
