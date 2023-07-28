@@ -14,7 +14,7 @@ public class Laser extends Actor
      */
     private int laserDirection;
     private final int MOVEMENT = 7;
-    
+    private GreenfootSound destroyed = new GreenfootSound("../sounds/destroy.mp3");
     public Laser(int laserDirection){
         this.laserDirection = laserDirection;
     }
@@ -50,7 +50,6 @@ public class Laser extends Actor
     }
     
     public void destroy(){
-        GreenfootSound destroyed = new GreenfootSound("../sounds/destroy.mp3");
         Actor meteor = getOneObjectAtOffset(0, 0, Meteor.class);
         if(meteor!=null){
             World myWorld = getWorld();

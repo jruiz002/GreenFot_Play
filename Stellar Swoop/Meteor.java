@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Meteor extends Actor
 {
     private int velocityX = 0;
-    
+    GreenfootSound dead = new GreenfootSound("../sounds/impact.mp3");
     public Meteor(int velocidad){
         velocityX = velocidad;
     }
@@ -19,7 +19,6 @@ public class Meteor extends Actor
     }
     
     public void destroy(){
-        GreenfootSound dead = new GreenfootSound("../sounds/impact.mp3");
         Actor character = getOneObjectAtOffset(0, 0, Astronaut.class);
         if(character!=null){
             dead.setVolume(90);
